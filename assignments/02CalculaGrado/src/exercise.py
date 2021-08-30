@@ -1,15 +1,15 @@
 def calcula_grado(numero): 
-    if numero<1 and numero>0:
-        if numero>=0.9 and numero<1 :
-            return('A')
-        elif numero>=0.8 and numero<0.9 :
-            return('B')
-        elif numero>=0.7 and numero<0.8 :
-            return('C')
-        elif  numero>=0.6 and numero<0.7 :
-            return('D')
-        else: 
-            return('F')
+    if numero<=1 and numero>=0 :
+        if numero>0.9 :
+            return 'A'
+        elif numero>0.8 :
+            return 'B'
+        elif numero>0.7 :
+            return 'C'
+        elif  numero>0.6 :
+            return 'D'
+        elif numero<0.6 :
+            return 'F'
     else:
         return('score incorrecto')
 def main():
